@@ -13,7 +13,7 @@ const api = axios.create({
 // Request interceptor — attach JWT token
 api.interceptors.request.use(
   (config) => {
-    const token = localStorage.getItem('weDecor_token');
+    const token = localStorage.getItem('weDecore_token');
     if (token) {
       config.headers.Authorization = `Bearer ${token}`;
     }
@@ -29,8 +29,8 @@ api.interceptors.response.use(
     const message = error.response?.data?.message || 'Something went wrong';
     
     if (error.response?.status === 401) {
-      localStorage.removeItem('weDecor_token');
-      localStorage.removeItem('weDecor_user');
+      localStorage.removeItem('weDecore_token');
+      localStorage.removeItem('weDecore_user');
       // Only redirect if not already on login page
       if (window.location.pathname !== '/login') {
         window.location.href = '/login';

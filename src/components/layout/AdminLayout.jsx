@@ -33,7 +33,7 @@ const AdminLayout = () => {
           <div className="flex items-center gap-2">
             <span className="text-xl">🌸</span>
             <span className="text-xl font-bold font-heading text-white">
-              weDecor
+              weDecore
             </span>
           </div>
           <p className="text-xs text-white/40 mt-1">Admin Dashboard</p>

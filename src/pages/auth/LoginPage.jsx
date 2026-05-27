@@ -80,7 +80,7 @@ const LoginPage = () => {
           <Link to="/" className="flex items-center gap-2 mb-8">
             <span className="text-2xl">🌸</span>
             <span className="text-2xl font-bold font-heading gradient-text">
-              weDecor
+              weDecore
             </span>
           </Link>
 

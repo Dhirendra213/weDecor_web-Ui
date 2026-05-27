@@ -12,7 +12,7 @@ const Footer = () => {
             <Link to="/" className="flex items-center gap-2 mb-4">
               <span className="text-2xl">🌸</span>
               <span className="text-2xl font-bold font-heading text-white">
-                weDecor
+                weDecore
               </span>
             </Link>
             <p className="text-sm text-white/60 leading-relaxed mb-6">
@@ -111,7 +111,7 @@ const Footer = () => {
       <div className="border-t border-white/10">
         <div className="max-w-7xl mx-auto px-6 sm:px-10 lg:px-16 py-6 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-xs text-white/40">
-            © {new Date().getFullYear()} weDecor. All rights reserved.
+            © {new Date().getFullYear()} weDecore. All rights reserved.
           </p>
           <p className="text-xs text-white/40">
             Made with 🌸 for beautiful celebrations

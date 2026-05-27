@@ -41,11 +41,10 @@ const Navbar = () => {
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.5, ease: 'easeOut' }}
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled
           ? 'glass shadow-lg shadow-rose-deep/5 py-3'
           : 'bg-transparent py-5'
-      }`}
+        }`}
     >
       <div className="max-w-7xl mx-auto px-6 sm:px-10 lg:px-16">
         <div className="flex items-center justify-between">
@@ -53,7 +52,7 @@ const Navbar = () => {
           <Link to="/" className="flex items-center gap-2 group">
             <span className="text-2xl">🌸</span>
             <span className="text-2xl font-bold font-heading gradient-text">
-              weDecor
+              weDecore
             </span>
           </Link>
 
@@ -63,11 +62,10 @@ const Navbar = () => {
               <Link
                 key={link.path}
                 to={link.path}
-                className={`relative text-sm font-medium transition-colors duration-200 hover:text-rose-deep ${
-                  location.pathname === link.path
+                className={`relative text-sm font-medium transition-colors duration-200 hover:text-rose-deep ${location.pathname === link.path
                     ? 'text-rose-deep'
                     : 'text-charcoal/70'
-                }`}
+                  }`}
               >
                 {link.name}
                 {location.pathname === link.path && (
@@ -180,11 +178,10 @@ const Navbar = () => {
                 <Link
                   key={link.path}
                   to={link.path}
-                  className={`block px-4 py-3 rounded-lg text-sm font-medium transition-colors ${
-                    location.pathname === link.path
+                  className={`block px-4 py-3 rounded-lg text-sm font-medium transition-colors ${location.pathname === link.path
                       ? 'bg-rose-deep/10 text-rose-deep'
                       : 'text-charcoal/70 hover:bg-blush/50'
-                  }`}
+                    }`}
                 >
                   {link.name}
                 </Link>

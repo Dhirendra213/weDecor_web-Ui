@@ -44,7 +44,7 @@ const RegisterPage = () => {
             >
               <span className="text-7xl block mb-6">💐</span>
               <h2 className="text-4xl font-bold font-heading mb-4">
-                Join weDecor
+                Join weDecore
               </h2>
               <p className="text-white/70 text-lg max-w-sm mx-auto">
                 Create an account to explore our stunning decoration gallery and connect with us for your events.
@@ -80,7 +80,7 @@ const RegisterPage = () => {
           <Link to="/" className="flex items-center gap-2 mb-8">
             <span className="text-2xl">🌸</span>
             <span className="text-2xl font-bold font-heading gradient-text">
-              weDecor
+              weDecore
             </span>
           </Link>
 

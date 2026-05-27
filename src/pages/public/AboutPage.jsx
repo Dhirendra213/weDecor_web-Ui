@@ -47,7 +47,7 @@ const AboutPage = () => {
             transition={{ delay: 0.1 }}
             className="text-4xl sm:text-5xl lg:text-6xl font-bold font-heading mt-3 mb-6"
           >
-            About <span className="gradient-text">weDecor</span>
+            About <span className="gradient-text">weDecore</span>
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 30 }}
@@ -55,7 +55,7 @@ const AboutPage = () => {
             transition={{ delay: 0.2 }}
             className="text-lg text-slate max-w-2xl mx-auto leading-relaxed"
           >
-            Born from a passion for flowers and a love for celebrations, weDecor
+            Born from a passion for flowers and a love for celebrations, weDecore
             is your partner in creating unforgettable moments through stunning
             event decorations.
           </motion.p>
@@ -99,7 +99,7 @@ const AboutPage = () => {
               </h2>
               <div className="space-y-4 text-slate leading-relaxed">
                 <p>
-                  At weDecor, we believe that every celebration tells a story. Our
+                  At weDecore, we believe that every celebration tells a story. Our
                   journey began with a simple idea — to transform ordinary spaces
                   into extraordinary experiences through the timeless beauty of flowers.
                 </p>

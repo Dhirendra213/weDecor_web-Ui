@@ -19,17 +19,17 @@ export const AuthProvider = ({ children }) => {
   // Check for stored auth on mount
   useEffect(() => {
     const initAuth = async () => {
-      const token = localStorage.getItem('weDecor_token');
-      const storedUser = localStorage.getItem('weDecor_user');
+      const token = localStorage.getItem('weDecore_token');
+      const storedUser = localStorage.getItem('weDecore_user');
 
       if (token && storedUser) {
         try {
           const res = await authService.getMe();
           setUser(res.data.data.user);
-          localStorage.setItem('weDecor_user', JSON.stringify(res.data.data.user));
+          localStorage.setItem('weDecore_user', JSON.stringify(res.data.data.user));
         } catch {
-          localStorage.removeItem('weDecor_token');
-          localStorage.removeItem('weDecor_user');
+          localStorage.removeItem('weDecore_token');
+          localStorage.removeItem('weDecore_user');
           setUser(null);
         }
       }
@@ -42,8 +42,8 @@ export const AuthProvider = ({ children }) => {
   const login = async (email, password) => {
     const res = await authService.login({ email, password });
     const { user: userData, token } = res.data.data;
-    localStorage.setItem('weDecor_token', token);
-    localStorage.setItem('weDecor_user', JSON.stringify(userData));
+    localStorage.setItem('weDecore_token', token);
+    localStorage.setItem('weDecore_user', JSON.stringify(userData));
     setUser(userData);
     toast.success(`Welcome back, ${userData.name}! 🌸`);
     return userData;
@@ -52,16 +52,16 @@ export const AuthProvider = ({ children }) => {
   const register = async (name, email, password) => {
     const res = await authService.register({ name, email, password });
     const { user: userData, token } = res.data.data;
-    localStorage.setItem('weDecor_token', token);
-    localStorage.setItem('weDecor_user', JSON.stringify(userData));
+    localStorage.setItem('weDecore_token', token);
+    localStorage.setItem('weDecore_user', JSON.stringify(userData));
     setUser(userData);
-    toast.success(`Welcome to weDecor, ${userData.name}! 🌸`);
+    toast.success(`Welcome to weDecore, ${userData.name}! 🌸`);
     return userData;
   };
 
   const logout = () => {
-    localStorage.removeItem('weDecor_token');
-    localStorage.removeItem('weDecor_user');
+    localStorage.removeItem('weDecore_token');
+    localStorage.removeItem('weDecore_user');
     setUser(null);
     toast.success('Logged out successfully');
   };
